@@ -20,7 +20,7 @@ export abstract class InverterParameterSource implements ParameterSource {
     this.currentPower.unit = "W";
 
     this.dayEnergy = new Parameter();
-    this.dayEnergy.name = "Energy";
+    this.dayEnergy.name = "Daily Energy";
     this.dayEnergy.unit = "Wh"; 
   }
 }
