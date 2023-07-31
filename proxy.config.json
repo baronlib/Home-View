@@ -1,0 +1,12 @@
+  {
+    "/inverter/*": {
+      "target": "http://192.168.1.5:80",
+      "secure": false,
+      "pathRewrite": {"^/inverter" : ""}
+    },
+      "/uv/*": {
+      "target": "http://localhost:35109",
+      "secure": false,
+      "pathRewrite": {"^/uv" : ""}
+    }
+  }

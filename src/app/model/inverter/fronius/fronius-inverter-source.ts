@@ -3,7 +3,7 @@ import { InverterParameterSource } from '../inverter-source';
 import { timer } from "rxjs";
 import { FroniusInverterData } from "./fronius.model";
 
-const url: string = "http://192.168.1.5/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData";
+const url: string = "/inverter/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData";
 const pollTime: number = 2000; // Poll time in milliseconds
 
 export class FroniusInverterSource extends InverterParameterSource {
