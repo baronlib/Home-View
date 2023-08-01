@@ -1,0 +1,18 @@
+.ui3-frame {
+  display: block;  /* iframes are inline by default */   
+  height: 90vh;  /* Set height to 100% of the viewport height */   
+  width: 100vw;  /* Set width to 100% of the viewport width */     
+  border: none; /* Remove default border */
+  background: lightyellow; /* Just for styling */
+}
+.left { 
+  float: left;
+  padding-left: 8px;
+}
+.right {
+  float: right;
+  padding-right: 8px;
+}
+.param {
+  color: greenyellow;
+}
