@@ -5,7 +5,7 @@ export abstract class InverterParameterSource implements ParameterSource {
 
   public getParameters(): Parameter[]
   {
-    return new Array<Parameter>(this.currentPower, this.dayEnergy);
+    return new Array<Parameter>(this.currentPower);//, this.dayEnergy);
   }
   
   // Currently generated Power in Watts

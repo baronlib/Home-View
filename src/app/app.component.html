@@ -1,4 +1,4 @@
-<div *ngFor="let param of parameters; let i = index" [ngClass]="i % 2 ? 'right' : 'left'">
+<iframe class="ui3-frame" src="http://192.168.1.20:81/ui3.htm?maximize=1" title="UI3"></iframe>
+<div style="position:absolute; top:0px; right:0px; z-index:2" *ngFor="let param of parameters; let i = index">
     <parameter-view class="param" [parameter]="param"></parameter-view>
 </div>
-<iframe class="ui3-frame" src="http://192.168.1.20:81" title="UI3"></iframe>
