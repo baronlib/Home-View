@@ -1,5 +1,11 @@
 <iframe class="ui3-frame" [src]="iFrameSrc" title="UI3"></iframe>
 
-<div class="parameter-layout" *ngFor="let param of parameters; let i = index">
-    <parameter-view class="parameter" [parameter]="param"></parameter-view>
+<div *ngFor="let paramSet of parameterSetRepo.parameterSets; let i=index;">
+    <div *ngFor="let paramSource of paramSet.parameterSource.getParameters()">
+        <parameter-view class="parameter"
+            [parameter]="paramSource"
+            [parameterSourceView]="paramSet.parameterSourceView"
+            [ngClass]="getPositionClass(i)">
+        </parameter-view>
+    </div>
 </div>

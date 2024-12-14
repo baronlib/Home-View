@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
-import { ParameterSourceRepoService } from './model/parameter/parameter-source-repo.service';
-import { Parameter } from './model/parameter/parameter.model';
+import { ParameterSetRepoService } from './model/parameter/parameter-set-repo.service';
+
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -16,15 +16,11 @@ export class AppComponent {
 
     iFrameSrc: string = this.sanitizer.bypassSecurityTrustResourceUrl(this.ui3Url) as string;
 
-    // Parameters to show in the dashboard  
-    public parameters: Parameter[] = [];
+    constructor(private sanitizer: DomSanitizer, public parameterSetRepo: ParameterSetRepoService) {
+    }
 
-    constructor(private sanitizer: DomSanitizer, parameterSources: ParameterSourceRepoService) {
-
-        // Get all parameters from all parameter sources
-        parameterSources.getAllParameterSources().forEach((paramSource) =>
-            paramSource.getParameters().forEach((param) => {
-                this.parameters.push(param);
-            }));
+    getPositionClass(index: number): string {
+        const positions = ['top-left', 'top-right', 'bottom-right', 'bottom-left'];
+        return positions[index % positions.length];
     }
 }

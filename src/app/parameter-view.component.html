@@ -1,1 +1,3 @@
-{{parameter.value | async | number}} {{parameter.unit}}
+<div [ngStyle]="{'color': parameterSourceView.color}">
+    {{parameter.value | async | number}} {{parameter.unit}}
+</div>

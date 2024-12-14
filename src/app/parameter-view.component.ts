@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Parameter } from './model/parameter/parameter.model';
+import { ParameterSourceView } from './model/parameter/parameter-source-view.model';
 
 @Component({
     selector: 'parameter-view',
@@ -7,5 +8,7 @@ import { Parameter } from './model/parameter/parameter.model';
 })
 export class ParameterViewComponent {
 
-    @Input('parameter') parameter: Parameter = new Parameter();
+    @Input() parameter: Parameter = new Parameter();
+
+    @Input() parameterSourceView: ParameterSourceView = new ParameterSourceView();
 }

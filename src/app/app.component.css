@@ -6,26 +6,30 @@
     background: lightyellow;
 }
 
-.left {
-    float: left;
-    padding-left: 8px;
-}
-
-.right {
-    float: right;
-    padding-right: 8px;
-}
-
-.parameter-layout {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 2;
-}
-
 .parameter {
+    position: absolute;
+    z-index: 2;
     text-align: center;
     font-size: 10em;
-    color: red;
     text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.top-left {
+    top: 0px;
+    left: 0px;
+}
+
+.top-right {
+    top: 0px;
+    right: 0px;
+}
+
+.bottom-right {
+    bottom: 0px;
+    right: 0px;
+}
+
+.bottom-left {
+    bottom: 0px;
+    left: 0px;
 }
