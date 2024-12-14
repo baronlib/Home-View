@@ -6,15 +6,15 @@ import { ParameterViewComponent } from './parameter-view.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ParameterViewComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ParameterViewComponent
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

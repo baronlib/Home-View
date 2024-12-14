@@ -20,7 +20,7 @@ export class ParameterSourceRepoService {
         // this.parameterSources.push(new WeatherSource());
     }
 
-    getAllParameterSources(): ParameterSource[]{
+    getAllParameterSources(): ParameterSource[] {
         return this.parameterSources;
     }
 }

@@ -1,0 +1,10 @@
+{
+  "/froniusapi": {
+    "target": "http://192.168.1.5",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/froniusapi": ""
+    }
+  }
+}

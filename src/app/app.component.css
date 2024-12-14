@@ -1,21 +1,31 @@
 .ui3-frame {
-  display: block;  /* iframes are inline by default */   
-  height: 100vh;  /* Set height to 100% of the viewport height */   
-  width: 100vw;  /* Set width to 100% of the viewport width */     
-  border: none; /* Remove default border */
-  background: lightyellow; /* Just for styling */
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    background: lightyellow;
 }
-.left { 
-  float: left;
-  padding-left: 8px;
+
+.left {
+    float: left;
+    padding-left: 8px;
 }
+
 .right {
-  float: right;
-  padding-right: 8px;
+    float: right;
+    padding-right: 8px;
 }
-.param {
-  text-align: center;
-  font-size: 10em;
-  color: red;
-  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 5px 5px 0px rgba(0, 0, 0, 0.8);
+
+.parameter-layout {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+.parameter {
+    text-align: center;
+    font-size: 10em;
+    color: red;
+    text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 5px 5px 0px rgba(0, 0, 0, 0.8);
 }
