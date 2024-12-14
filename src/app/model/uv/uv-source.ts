@@ -1,5 +1,5 @@
-import { ParameterSource } from "../parameter/parameter-source.model";
-import { Parameter } from "../parameter/parameter.model";
+import { ParameterSource } from '../parameter/parameter-source.model';
+import { Parameter } from '../parameter/parameter.model';
 
 export abstract class UvSource implements ParameterSource {
 
@@ -8,12 +8,10 @@ export abstract class UvSource implements ParameterSource {
     constructor() {
 
         this.uvIndex = new Parameter();
-        this.uvIndex.name = "UV Index";
+        this.uvIndex.name = 'UV Index';
         this.uvIndex.unit = "";
         this.uvIndex.minValue = 0;
         this.uvIndex.maxValue = 15;
-
-        // TODO - colour
     }
 
     getParameters(): Parameter[] {
