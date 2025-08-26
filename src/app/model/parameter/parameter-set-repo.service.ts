@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { FroniusInverterSource } from '../inverter/fronius/fronius-inverter-source';
 import { ArpansaUvSource } from '../uv/arpansa-uv-source';
 import { ParameterSet } from './parameter-set.model';
+import { TestForecastSource } from '../forecast/test-forecast-source';
 
 @Injectable({
     providedIn: 'root'
@@ -24,6 +25,12 @@ export class ParameterSetRepoService {
             parameterSource: new FroniusInverterSource(this.http),
             parameterSourceView: {
                 color: 'red',
+            }
+        });
+        this.parameterSets.push({
+            parameterSource: new TestForecastSource(),
+            parameterSourceView: {
+                color: 'orange',
             }
         });
     }
